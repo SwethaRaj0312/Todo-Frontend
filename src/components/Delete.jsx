@@ -7,7 +7,7 @@ function Delete() {
 
   const handleDelete = async () => {
     try {
-      const resp = await axios.delete(`http://localhost:3000/todos/${id}`);
+      const resp = await axios.delete(`https://todo-backend-uqwi.onrender.com/todos/${id}`);
       setMsg(resp.data.msg);
     } catch (e) {
       setMsg("Error: " + e.message);

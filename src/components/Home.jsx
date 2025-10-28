@@ -6,7 +6,7 @@ function Home() {
 
   const loadTodos = async () => {
     try {
-      const resp = await axios.get("http://localhost:3000/todos");
+      const resp = await axios.get("https://todo-backend-uqwi.onrender.com/todos");
       setTodos(resp.data);
     } catch (e) {
       console.error(e);

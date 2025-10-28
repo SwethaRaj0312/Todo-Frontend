@@ -7,7 +7,7 @@ function Add() {
 
   const handleAdd = async () => {
     try {
-      const resp = await axios.post("http://localhost:3000/todos", todo);
+      const resp = await axios.post("https://todo-backend-uqwi.onrender.com/todos", todo);
       setMsg(resp.data.msg);
     } catch (e) {
       setMsg("Error: " + e.message);

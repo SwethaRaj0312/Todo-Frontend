@@ -7,7 +7,7 @@ function Update() {
 
   const handleUpdate = async () => {
     try {
-      const resp = await axios.put(`http://localhost:3000/todos/${todo.id}`, {
+      const resp = await axios.put(`https://todo-backend-uqwi.onrender.com/todos/${todo.id}`, {
         title: todo.title,
         completed: todo.completed,
       });
